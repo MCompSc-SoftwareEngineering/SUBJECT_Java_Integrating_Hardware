@@ -20,7 +20,6 @@ public class ClientAssembly
             System.out.printf("done class Global generate.%n");
 
         System.out.printf("started STRUCTS generate.%n");
-        stat_CLASS_get_Framework().dyn_boot_create_Architecture_Of_Framework();
             System.out.printf("started independent STRUCT User_Input() - DECLAIRE, DEFINE INITIALISE, Registers - DEFINE, SUBSTANTIATE, INITIALISE.%n");
             stat_CLASS_get_Framework().dyn_STRUCT_boot1_DEFINE_User_Input();
             stat_CLASS_get_Framework().dyn_STRUCT_boot3_INITIALISE_User_Input();
@@ -84,6 +83,10 @@ public class ClientAssembly
         //stat_CLASS_get_Framework().dyn_STRUCT_get_PostProcess().dyn_REG_boot3_INITIALISE_IO_Listen_Respond();//todo
         System.out.printf("done independent STRUCT IO_ListenRespond() - DECLAIRE, DEFINE INITIALISE, Registers - DEFINE, SUBSTANTIATE, INITIALISE.%n");
         System.out.printf("done STRUCTS generate.%n");
+
+        System.out.printf("started architectured classes - DEFINE INITIALISE.%n");
+        stat_CLASS_get_Framework().dyn_boot_create_Architecture_Of_Framework();
+        System.out.printf("done architectured classes - DEFINE INITIALISE.%n");
 
         System.out.printf("started ARCHITECTURE generate. - Registers - DEFINE, SUBSTANTIATE, INITIALISE.%n");
         System.out.printf("started architectured classes - Registers - DEFINE.%n");
