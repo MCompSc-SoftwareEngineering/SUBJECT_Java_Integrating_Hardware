@@ -57,7 +57,7 @@ public class Framework
         System.out.printf("exiting dyn_REG_boot4_INSTANTIATE_Framework_App().%n");
     }
     public void dyn_CLASS_boot1_DEFINE_Game_Instance() {
-        stat_STRUCT_boot1_DEFINE_INSTANCE_Game();
+        stat_STRUCT_boot1_DEFINE_Game_Instance();
     }
     public void dyn_STRUCT_boot1_DEFINE_User_Input() {
         stat_STRUCT_boot1_DEFINE_User_Input();
@@ -78,7 +78,7 @@ public class Framework
         stat_STRUCT_boot1_DEFINE_Output();
     }
     public void dyn_STRUCT_boo1_DEFINE_XboxController() { 
-        stat_STRUCT_boo1_DEFINE_XboxController(); 
+        stat_STRUCT_boot1_DEFINE_XboxController();
     }
     public void dyn_STRUCT_boot3_INITIALISE_Game_Instance() {
         stat_STRUCT_boot3_INITIALISE_Game_Instance();
@@ -101,8 +101,8 @@ public class Framework
     public void dyn_STRUCT_boot3_INITIALISE_User_Output() {
         stat_STRUCT_boot3_INITIALISE_User_Output();
     }
-    public void dyn_STRUCT_boot3_INITIALISE_OutputGameInstance_Data() {
-        stat_STRUCT_boot3_INITIALISE_OutputGameInstance_Data();
+    public void dyn_STRUCT_boot3_INITIALISE_XboxController() {
+        stat_STRUCT_boot3_INITIALISE_XboxController();
     }
     public void dyn_THREAD_boot1_DEFINE_EventListener_XBoxController() {
         stat_THREAD_boot1_DEFINE_EventListener_XBoxController();
@@ -114,7 +114,7 @@ public class Framework
         return stat_STRUCT_get_Input();
     }
     public Game_Instance dyn_STRUCT_get_Game_Instance() {
-        return stat_STRUCT_get_INSTANCE_Game();
+        return stat_STRUCT_get_Game_Instance();
     }
     public Output dyn_STRUCT_get_Output() {
         return stat_STRUCT_get_Output();
@@ -182,7 +182,7 @@ public class Framework
         return _stat_CLASS_Global;
     }
     // structures.
-    private static void stat_STRUCT_boot1_DEFINE_INSTANCE_Game() {
+    private static void stat_STRUCT_boot1_DEFINE_Game_Instance() {
         _stat_STRUCT_Game_Instance = null;
     }
     private static void stat_STRUCT_boot1_DEFINE_Algorithm() {
@@ -209,7 +209,7 @@ public class Framework
     private static void stat_STRUCT_boot3_INITIALISE_Game_Instance() {
         _stat_STRUCT_Game_Instance = new Game_Instance();
         try {
-            stat_STRUCT_get_INSTANCE_Game();
+            stat_STRUCT_get_Game_Instance();
         }
         catch (NullPointerException e) {
             System.out.printf("NullPointerException.%n");
@@ -269,10 +269,10 @@ public class Framework
             System.out.printf("NullPointerException.%n");
         }
     }
-    private static void stat_STRUCT_boot3_INITIALISE_OutputGameInstance_Data() {
-        _stat_STRUCT_Game_Instance = new Game_Instance();
+    private static void stat_STRUCT_boot3_INITIALISE_XboxController() {
+        _stat_STRUCT_XboxController = new XboxController();
         try {
-            stat_STRUCT_get_INSTANCE_Game();
+            stat_STRUCT_get_XboxController();
         }
         catch (NullPointerException e) {
             System.out.printf("NullPointerException.%n");
@@ -284,11 +284,14 @@ public class Framework
     private static Input stat_STRUCT_get_Input() {
         return _stat_STRUCT_Input;
     }
-    private static Game_Instance stat_STRUCT_get_INSTANCE_Game() {
+    private static Game_Instance stat_STRUCT_get_Game_Instance() {
         return _stat_STRUCT_Game_Instance;
     }
     private static Output stat_STRUCT_get_Output() {
         return _stat_STRUCT_Output;
+    }
+    private static User_Algorithm stat_STRUCT_get_User_Algorithm() {
+        return _stat_STRUCT_User_Algorithms;
     }
     private static User_Input stat_STRUCT_get_User_Input() {
         return _stat_STRUCT_User_Inputs;
@@ -296,9 +299,7 @@ public class Framework
     private static User_Output stat_STRUCT_get_User_Output() {
         return _stat_STRUCT_User_Outputs;
     }
-    private static User_Algorithm stat_STRUCT_get_User_Algorithm() {
-        return _stat_STRUCT_User_Algorithms;
-    }
+    private static XboxController stat_STRUCT_get_XboxController() { return _stat_STRUCT_XboxController; }
     private static void stat_THREAD_boot1_DEFINE_EventListener_XBoxController() {
         _stat_THREAD_EventListener_XBoxController = null;
     }

@@ -80,17 +80,14 @@ public class Game_Instance {
     private static void stat_REG_boot2_SUBSTANTIATE_xboxController()
     {
         System.out.printf("entered stat_REG_boot2_SUBSTANTIATE_xboxController().%n");
-        _stat_REG_Array_Of_xboxController = new XboxController[2];//todo make 4 detect and save
+        _stat_REG_Array_Of_xboxController = new XboxController[1];//todo make 4 detect and save
         while(stat_REG_get_Array_Of_xboxController() == null) { }
         System.out.printf("exiting stat_REG_boot2_SUBSTANTIATE_xboxController().%n");
     }
     private static void stat_REG_boot3_INITIALISE_xboxController(XboxController controller)
     {
         System.out.printf("entered stat_REG_boot3_INITIALISE_xboxController().%n");
-        for(char controllerId = 0; controllerId < 1; controllerId++)//todo make 4 detect and save
-        {
-            _stat_REG_Array_Of_xboxController[controllerId] = controller;
-        }
+        _stat_REG_Array_Of_xboxController[0] = controller;
         System.out.printf("exiting stat_REG_boot3_INITIALISE_xboxController().%n");
     }
     private static XboxController[] stat_REG_get_Array_Of_xboxController()
