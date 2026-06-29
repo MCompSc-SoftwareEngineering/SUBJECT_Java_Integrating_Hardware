@@ -1,6 +1,6 @@
 package io;
 import engine.Framework;
-public class ClientAssembly 
+public class ClientAssembly
 {
     public static Framework _stat_CLASS_framework;
     // public.
@@ -64,18 +64,18 @@ public class ClientAssembly
         stat_CLASS_get_Framework().dyn_STRUCT_get_Output().dyn_REG_boot3_INITIALISE_Output(stat_CLASS_get_Framework().dyn_STRUCT_get_User_Output());
         System.out.printf("started independent STRUCT Output() - DECLAIRE, DEFINE INITIALISE, Registers - DEFINE, SUBSTANTIATE, INITIALISE.%n");
             System.out.printf("started independent STRUCT XboxController() - DECLAIRE, DEFINE INITIALISE, Registers - DEFINE, SUBSTANTIATE, INITIALISE.%n");
-            stat_CLASS_get_Framework().dyn_STRUCT_get_XboxController().dyn_CLASS_boot1_DEFINE_XboxController();
-            stat_CLASS_get_Framework().dyn_STRUCT_get_XboxController().dyn_CLASS_boot3_INITIALISE_XboxController();
+            stat_CLASS_get_Framework().dyn_STRUCT_boo1_DEFINE_XboxController();
+            stat_CLASS_get_Framework().dyn_STRUCT_boot3_INITIALISE_XboxController();
             stat_CLASS_get_Framework().dyn_STRUCT_get_XboxController().dyn_REG_boot1_DEFINE_XboxController();
             stat_CLASS_get_Framework().dyn_STRUCT_get_XboxController().dyn_REG_boot2_SUBSTANTIATE_XboxController();
             stat_CLASS_get_Framework().dyn_STRUCT_get_XboxController().dyn_REG_boot3_INITIALISE_XboxController();
             System.out.printf("done independent STRUCT XboxController() - DECLAIRE, DEFINE INITIALISE, Registers - DEFINE, SUBSTANTIATE, INITIALISE.%n");
         System.out.printf("started independent STRUCT Game_Instance() - DECLAIRE, DEFINE INITIALISE, Registers - DEFINE, SUBSTANTIATE, INITIALISE.%n");
-        stat_CLASS_get_Framework().dyn_STRUCT_get_Game_Instance().dyn_CLASS_boot1_DEFINE_Game_Instance();
-        stat_CLASS_get_Framework().dyn_STRUCT_get_Game_Instance().dyn_CLASS_boot3_INITIALISE_Game_Instance();
+        stat_CLASS_get_Framework().dyn_CLASS_boot1_DEFINE_Game_Instance();
+        stat_CLASS_get_Framework().dyn_STRUCT_boot3_INITIALISE_Game_Instance();
         stat_CLASS_get_Framework().dyn_STRUCT_get_Game_Instance().dyn_REG_boot1_DEFINE_Game_Instance(stat_CLASS_get_Framework());
         stat_CLASS_get_Framework().dyn_STRUCT_get_Game_Instance().dyn_REG_boot2_SUBSTANTIATE_Game_Instance(stat_CLASS_get_Framework());
-        stat_CLASS_get_Framework().dyn_STRUCT_get_Game_Instance().dyn_REG_boot3_INITIALISE_Game_Instance(stat_CLASS_get_Framework(), );
+        stat_CLASS_get_Framework().dyn_STRUCT_get_Game_Instance().dyn_REG_boot3_INITIALISE_Game_Instance(stat_CLASS_get_Framework(), stat_CLASS_get_Framework().dyn_STRUCT_get_XboxController());
         System.out.printf("done independent STRUCT Game_Instance() - DECLAIRE, DEFINE INITIALISE, Registers - DEFINE, SUBSTANTIATE, INITIALISE.%n");
 //TODO THREADS
         System.out.printf("started independent STRUCT IO_ListenRespond() - DECLAIRE, DEFINE INITIALISE, Registers - DEFINE, SUBSTANTIATE, INITIALISE.%n");

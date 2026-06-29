@@ -45,7 +45,7 @@ public class EventListener_XBoxController {
     {
          Thread thread = new Thread(() -> {
             XboxController[] sampleTEMP = new XboxController[2];
-            sampleTEMP[0] = obj.dyn_STRUCT_get_INSTANCE_Game().stat_REG_get_Item_On_Array_Of_xboxController((char)0);
+            sampleTEMP[0] = obj.dyn_STRUCT_get_Game_Instance().stat_REG_get_Item_On_Array_Of_xboxController((char)0);
             for(char corntrollerId = 1; corntrollerId < 2; corntrollerId++) {
                 sampleTEMP[corntrollerId] = sampleTEMP[0];
             }
@@ -157,7 +157,7 @@ public class EventListener_XBoxController {
                     }
                     WriteQue_InputPerihperalSamples.app_FUNCT_write_Start(0);
                     for(char controllerId = 1; controllerId < 2; controllerId++) {//todo number of controllers
-                        obj.dyn_CLASS_get_Framework_App().dyn_CLASS_get_Data().dyn_CLASS_get_INSTANCE_Game().dyn_APP_saveSampleOfController(controllerId, sampleTEMP[controllerId]);
+                        obj.dyn_CLASS_get_Framework_App().dyn_CLASS_get_Data().dyn_CLASS_get_Game_Instance().dyn_APP_saveSampleOfController(controllerId, sampleTEMP[controllerId]);
                     }
                     WriteQue_InputPerihperalSamples.app_FUNCT_write_End(0);
                     for(char corntrollerId = 1; corntrollerId < 2; corntrollerId++) {

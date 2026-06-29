@@ -10,7 +10,7 @@ import java.util.List;
 public class Data
 {
 	static private Data_Control _stat_CLASS_data_Control;
-	static private Game_Instance _stat_REG_INSTANCE_Game;
+	static private Game_Instance _stat_REG_Game_Instance;
 	static private Output[] _stat_REG_Buffer_Reference_For_Core_Of_Output;
 	static private Input[] _stat_REG_doublebuffer_Client_InputSend;
 	static private Output[] _stat_REG_doublebuffer_Client_OutputRecieve;
@@ -30,7 +30,7 @@ public class Data
 	{
 		return stat_CLASS_get_data_Control();
 	}
-	public Game_Instance dyn_CLASS_get_INSTANCE_Game()
+	public Game_Instance dyn_CLASS_get_Game_Instance()
 	{
 		return stat_CLASS_get_Game_Instance();
 	}
@@ -98,7 +98,7 @@ public class Data
 	{
 		System.out.printf("entered stat_CLASS_boot1_DEFINE_Data().%n");
 		stat_CLASS_boot1_DEFINE_data_Control();
-		stat_CLASS_boot1_DEFINE_INSTANCE_Game();
+		stat_CLASS_boot1_DEFINE_Game_Instance();
 		System.out.printf("exiting stat_CLASS_boot1_DEFINE_Data().%n");
 	}
 	private static void stat_CLASS_boot3_INITIALISE_Data()
@@ -119,9 +119,9 @@ public class Data
 	{
 		_stat_CLASS_data_Control = null;
 	}
-	static private void stat_CLASS_boot1_DEFINE_INSTANCE_Game()
+	static private void stat_CLASS_boot1_DEFINE_Game_Instance()
 	{
-		_stat_REG_INSTANCE_Game = null;
+		_stat_REG_Game_Instance = null;
 	}
 	static private void stat_CLASS_boot3_INITIALISE_data_Control()
 	{
@@ -135,7 +135,7 @@ public class Data
 	}
 	static private void stat_CLASS_boot3_INITIALISE_Game_Instance()
 	{
-		_stat_REG_INSTANCE_Game = new Game_Instance();
+		_stat_REG_Game_Instance = new Game_Instance();
 		try {
 			stat_CLASS_get_Game_Instance();
 		}
@@ -149,7 +149,7 @@ public class Data
 	}
 	static private Game_Instance stat_CLASS_get_Game_Instance()
 	{
-	     return _stat_REG_INSTANCE_Game;
+	     return _stat_REG_Game_Instance;
 	}
 	static private byte stat_CONVERT_boolean_To_byte(boolean value)
 	{
