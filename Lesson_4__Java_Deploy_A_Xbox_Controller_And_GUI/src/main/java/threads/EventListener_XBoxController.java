@@ -2,11 +2,11 @@ package threads;
 import de.gurkenlabs.input4j.InputDevices;
 import engine.Framework;
 import io.WriteQue_InputPerihperalSamples;
-import java.awt.*;
+
 import java.io.IOException;
 import java.util.Objects;
 import menu.MenuMain;
-import structs.peripheralSamples.xboxController;
+import structs.peripheralSamples.XboxController;
 public class EventListener_XBoxController {
     public enum componentOfController {
     // list as polled from controller (not alphabetical).
@@ -44,7 +44,7 @@ public class EventListener_XBoxController {
     public void doScanOfXBoxControllers(Framework obj)
     {
          Thread thread = new Thread(() -> {
-            xboxController[] sampleTEMP = new xboxController[2];
+            XboxController[] sampleTEMP = new XboxController[2];
             sampleTEMP[0] = obj.dyn_STRUCT_get_INSTANCE_Game().stat_REG_get_Item_On_Array_Of_xboxController((char)0);
             for(char corntrollerId = 1; corntrollerId < 2; corntrollerId++) {
                 sampleTEMP[corntrollerId] = sampleTEMP[0];

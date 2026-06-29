@@ -1,6 +1,6 @@
 package engine;
 import structs.*;
-import structs.peripheralSamples.xboxController;
+import structs.peripheralSamples.XboxController;
 import threads.EventListener_XBoxController;
 
 import javax.swing.*;
@@ -8,32 +8,27 @@ public class Framework
 {
     private static App _stat_CLASS_Framework_App;
     private static Global _stat_CLASS_Global;
-    private static Game_Instance _stat_STRUCT_INSTANCE_Game;
-    private static Algorithim _stat_STRUCT_Algorithim;
+    private static Algorithm _stat_STRUCT_Algorithm;
     private static Input _stat_STRUCT_Input;
+    private static Game_Instance _stat_STRUCT_Game_Instance;
     private static Output _stat_STRUCT_Output;
-    private static User_Algorithim _stat_STRUCT_User_Algorithims;
+    private static User_Algorithm _stat_STRUCT_User_Algorithms;
     private static User_Input _stat_STRUCT_User_Inputs;
     private static User_Output _stat_STRUCT_User_Outputs;
+    private static XboxController _stat_STRUCT_XboxController;
     private static EventListener_XBoxController _stat_THREAD_EventListener_XBoxController;
     public Framework() {
         System.out.printf("entered CONSTRUCTOR Framework()%n");
         stat_CLASS_boot0_DECLAIRE_Framework_App();
         System.out.printf("exiting CONSTRUCTOR Framework()%n");
     }
-    public void dyn_CLASS_establish_Framework() {
+    public void dyn_boot_create_Architecture_Of_Framework() {
         stat_CLASS_boot1_DEFINE_Framework_App();
         stat_CLASS_boot3_INITIALISE_Framework_App();
     }
-    public void dyn_CLASS_complete_Framework(Framework obj) {
-        dyn_STRUCT_boot0_DECLAIRE();
-        dyn_SRUCT_boot1_DEFINE();
-        dyn_STRUCT_boot3_INITIALISE(obj);
-
-    }
     public void dyn_CLASS_create_Global_and_Settings() {
         boot1_CLASS_boot1_DEFINE_Global();
-        boot3_CLASS_INITIALISE_Global();
+        stat_CLASS_boot3_INITIALISE_Global();
     }
     public App dyn_CLASS_get_Framework_App() {
         return stat_CLASS_get_Framework_App();
@@ -61,17 +56,71 @@ public class Framework
         obj.dyn_CLASS_get_Framework_App().dyn_CLASS_get_Execute().dyn_REG_boot4_INSTANTIATE_Execute();
         System.out.printf("exiting dyn_REG_boot4_INSTANTIATE_Framework_App().%n");
     }
-    public Algorithim dyn_STRUCT_get_Algorithim() {
-        return stat_STRUCT_get_Algorithim();
+    public void dyn_CLASS_boot1_DEFINE_Game_Instance() {
+        stat_STRUCT_boot1_DEFINE_INSTANCE_Game();
+    }
+    public void dyn_STRUCT_boot1_DEFINE_User_Input() {
+        stat_STRUCT_boot1_DEFINE_User_Input();
+    }
+    public void dyn_STRUCT_boot1_DEFINE_User_Output() {
+        stat_STRUCT_boot1_DEFINE_User_Output();
+    }
+    public void dyn_STRUCT_boot1_DEFINE_User_Algorithm() {
+        stat_STRUCT_boot1_DEFINE_User_Algorithm();
+    }
+    public void dyn_STRUCT_boot1_DEFINE_Algorithm() {
+        stat_STRUCT_boot1_DEFINE_Algorithm();
+    }
+    public void dyn_STRUCT_boot1_DEFINE_Input() {
+        stat_STRUCT_boot1_DEFINE_Input();
+    }
+    public void dyn_STRUCT_boot1_DEFINE_Output() {
+        stat_STRUCT_boot1_DEFINE_Output();
+    }
+    public void dyn_STRUCT_boo1_DEFINE_XboxController() { 
+        stat_STRUCT_boo1_DEFINE_XboxController(); 
+    }
+    public void dyn_STRUCT_boot3_INITIALISE_Game_Instance() {
+        stat_STRUCT_boot3_INITIALISE_Game_Instance();
+    }
+    public void dyn_STRUCT_boot3_INITIALISE_Algorithm() {
+        stat_STRUCT_boot3_INITIALISE_Algorithm();
+    }
+    public void dyn_STRUCT_boot3_INITIALISE_Input() {
+        stat_STRUCT_boot3_INITIALISE_Input();
+    }
+    public void dyn_STRUCT_boot3_INITIALISE_Output() {
+        stat_STRUCT_boot3_INITIALISE_Output();
+    }
+    public void dyn_STRUCT_boot3_INITIALISE_User_Algorithm() {
+        stat_STRUCT_boot3_INITIALISE_User_Algorithm();
+    }
+    public void dyn_STRUCT_boot3_INITIALISE_User_Input() {
+        stat_STRUCT_boot3_INITIALISE_User_Input();
+    }
+    public void dyn_STRUCT_boot3_INITIALISE_User_Output() {
+        stat_STRUCT_boot3_INITIALISE_User_Output();
+    }
+    public void dyn_STRUCT_boot3_INITIALISE_OutputGameInstance_Data() {
+        stat_STRUCT_boot3_INITIALISE_OutputGameInstance_Data();
+    }
+    public void dyn_THREAD_boot1_DEFINE_EventListener_XBoxController() {
+        stat_THREAD_boot1_DEFINE_EventListener_XBoxController();
+    }
+    public Algorithm dyn_STRUCT_get_Algorithm() {
+        return stat_STRUCT_get_Algorithm();
     }
     public Input dyn_STRUCT_get_Input() {
         return stat_STRUCT_get_Input();
     }
-    public Game_Instance dyn_STRUCT_get_INSTANCE_Game() {
+    public Game_Instance dyn_STRUCT_get_Game_Instance() {
         return stat_STRUCT_get_INSTANCE_Game();
     }
     public Output dyn_STRUCT_get_Output() {
         return stat_STRUCT_get_Output();
+    }
+    public User_Algorithm dyn_STRUCT_get_User_Algorithm() {
+        return stat_STRUCT_get_User_Algorithm();
     }
     public User_Input dyn_STRUCT_get_User_Input() {
         return stat_STRUCT_get_User_Input();
@@ -79,39 +128,11 @@ public class Framework
     public User_Output dyn_STRUCT_get_User_Output() {
         return stat_STRUCT_get_User_Output();
     }
+    public XboxController dyn_STRUCT_get_XboxController() {
+        return stat_STRUCT_get_XboxController();
+    }
     public EventListener_XBoxController dyn_THREAD_get_EventListener_XBoxController() {
         return _stat_THREAD_EventListener_XBoxController;
-    }
-    public void dyn_STRUCT_boot0_DECLAIRE() {
-        System.out.printf("entered stat_STRUCT_boot0_DECLAIRE().%n");
-
-        System.out.printf("exiting stat_STRUCT_boot0_DECLAIRE().%n");
-    }
-    public void dyn_SRUCT_boot1_DEFINE() {
-        System.out.printf("entered stat_STRUCT_boot1_DEFINE().%n");
-        stat_STRUCT_boot1_DEFINE_User_Input();
-        stat_STRUCT_boot1_DEFINE_User_Output();
-        stat_STRUCT_boot1_DEFINE_User_Algorithim();
-        stat_STRUCT_boot1_DEFINE_Algorithim();
-        stat_STRUCT_boot1_DEFINE_Input();
-        stat_STRUCT_boot1_DEFINE_Output();
-        stat_STRUCT_boot1_DEFINE_INSTANCE_Game();
-        stat_THREAD_boot1_DEFINE_EventListener_XBoxController();
-        //todo.
-        System.out.printf("exiting stat_STRUCT_boot1_DEFINE().%n");
-    }
-    public void dyn_STRUCT_boot3_INITIALISE(Framework obj) {
-        System.out.printf("entered stat_STRUCT_boot3_INITIALISE().%n");
-        stat_STRUCT_boot3_INITIALISE_User_Input();
-        stat_STRUCT_boot3_INITIALISE_User_Output();
-        stat_STRUCT_boot3_INITIALISE_User_Algorithim();
-        stat_STRUCT_boot3_INITIALISE_Algorithim();
-        stat_STRUCT_boot3_INITIALISE_Input();
-        stat_STRUCT_boot3_INITIALISE_Output();
-        stat_STRUCT_boot3_INITIALISE_INSTANCE_Game();
-        stat_THREAD_boot3_INITIALISE_EventListener_XBoxController(obj);
-        //todo.
-        System.out.printf("exiting stat_STRUCT_boot3_INITIALISE().%n");
     }
 // private.
     // classes.
@@ -141,8 +162,8 @@ public class Framework
         }
         System.out.printf("exiting stat_CLASS_boot3_INITIALISE_Framework_App().%n");
     }
-    private static void boot3_CLASS_INITIALISE_Global() {
-        System.out.printf("entered boot3_CLASS_INITIALISE_Global().%n");
+    private static void stat_CLASS_boot3_INITIALISE_Global() {
+        System.out.printf("entered stat_CLASS_boot3_INITIALISE_Global().%n");
         _stat_CLASS_Global = new Global();
         try {
             stat_CLASS_get_Global();
@@ -150,7 +171,7 @@ public class Framework
         catch (NullPointerException e) {
             System.out.printf("NullPointerException.%n");
         }
-        System.out.printf("exiting boot3_CLASS_INITIALISE_Global().%n");
+        System.out.printf("exiting stat_CLASS_boot3_INITIALISE_Global().%n");
     }
     private static App stat_CLASS_get_Framework_App()
     {
@@ -161,20 +182,20 @@ public class Framework
         return _stat_CLASS_Global;
     }
     // structures.
-    private static void stat_STRUCT_boot1_DEFINE_Algorithim() {
-        _stat_STRUCT_Algorithim = null;
+    private static void stat_STRUCT_boot1_DEFINE_INSTANCE_Game() {
+        _stat_STRUCT_Game_Instance = null;
+    }
+    private static void stat_STRUCT_boot1_DEFINE_Algorithm() {
+        _stat_STRUCT_Algorithm = null;
     }
     private static void stat_STRUCT_boot1_DEFINE_Input() {
         _stat_STRUCT_Input = null;
     }
-    private static void stat_STRUCT_boot1_DEFINE_INSTANCE_Game() {
-        _stat_STRUCT_INSTANCE_Game = null;
-    }
     private static void stat_STRUCT_boot1_DEFINE_Output() {
         _stat_STRUCT_Output = null;
     }
-    private static void stat_STRUCT_boot1_DEFINE_User_Algorithim() {
-        _stat_STRUCT_User_Algorithims = null;
+    private static void stat_STRUCT_boot1_DEFINE_User_Algorithm() {
+        _stat_STRUCT_User_Algorithms = null;
     }
     private static void stat_STRUCT_boot1_DEFINE_User_Input() {
         _stat_STRUCT_User_Inputs = null;
@@ -182,10 +203,22 @@ public class Framework
     private static void stat_STRUCT_boot1_DEFINE_User_Output() {
         _stat_STRUCT_User_Outputs = null;
     }
-    private static void stat_STRUCT_boot3_INITIALISE_Algorithim() {
-        _stat_STRUCT_Algorithim = new Algorithim();
+    private static void stat_STRUCT_boot1_DEFINE_XboxController() {
+        _stat_STRUCT_XboxController = null;
+    }
+    private static void stat_STRUCT_boot3_INITIALISE_Game_Instance() {
+        _stat_STRUCT_Game_Instance = new Game_Instance();
         try {
-            stat_STRUCT_get_Algorithim();
+            stat_STRUCT_get_INSTANCE_Game();
+        }
+        catch (NullPointerException e) {
+            System.out.printf("NullPointerException.%n");
+        }
+    }
+    private static void stat_STRUCT_boot3_INITIALISE_Algorithm() {
+        _stat_STRUCT_Algorithm = new Algorithm();
+        try {
+            stat_STRUCT_get_Algorithm();
         }
         catch (NullPointerException e) {
             System.out.printf("NullPointerException.%n");
@@ -200,15 +233,6 @@ public class Framework
             System.out.printf("NullPointerException.%n");
         }
     }
-    private static void stat_STRUCT_boot3_INITIALISE_INSTANCE_Game() {
-        _stat_STRUCT_INSTANCE_Game = new Game_Instance();
-        try {
-            stat_STRUCT_get_INSTANCE_Game();
-        }
-        catch (NullPointerException e) {
-            System.out.printf("NullPointerException.%n");
-        }
-    }
     private static void stat_STRUCT_boot3_INITIALISE_Output() {
         _stat_STRUCT_Output = new Output();
         try {
@@ -218,10 +242,10 @@ public class Framework
             System.out.printf("NullPointerException.%n");
         }
     }
-    private static void stat_STRUCT_boot3_INITIALISE_User_Algorithim() {
-        _stat_STRUCT_User_Algorithims = new User_Algorithim();
+    private static void stat_STRUCT_boot3_INITIALISE_User_Algorithm() {
+        _stat_STRUCT_User_Algorithms = new User_Algorithm();
         try {
-            stat_STRUCT_get_User_Algorithim();
+            stat_STRUCT_get_User_Algorithm();
         }
         catch (NullPointerException e) {
             System.out.printf("NullPointerException.%n");
@@ -246,7 +270,7 @@ public class Framework
         }
     }
     private static void stat_STRUCT_boot3_INITIALISE_OutputGameInstance_Data() {
-        _stat_STRUCT_INSTANCE_Game = new Game_Instance();
+        _stat_STRUCT_Game_Instance = new Game_Instance();
         try {
             stat_STRUCT_get_INSTANCE_Game();
         }
@@ -254,14 +278,14 @@ public class Framework
             System.out.printf("NullPointerException.%n");
         }
     }
-    private static Algorithim stat_STRUCT_get_Algorithim() {
-        return _stat_STRUCT_Algorithim;
+    private static Algorithm stat_STRUCT_get_Algorithm() {
+        return _stat_STRUCT_Algorithm;
     }
     private static Input stat_STRUCT_get_Input() {
         return _stat_STRUCT_Input;
     }
     private static Game_Instance stat_STRUCT_get_INSTANCE_Game() {
-        return _stat_STRUCT_INSTANCE_Game;
+        return _stat_STRUCT_Game_Instance;
     }
     private static Output stat_STRUCT_get_Output() {
         return _stat_STRUCT_Output;
@@ -272,8 +296,8 @@ public class Framework
     private static User_Output stat_STRUCT_get_User_Output() {
         return _stat_STRUCT_User_Outputs;
     }
-    private static User_Algorithim stat_STRUCT_get_User_Algorithim() {
-        return _stat_STRUCT_User_Algorithims;
+    private static User_Algorithm stat_STRUCT_get_User_Algorithm() {
+        return _stat_STRUCT_User_Algorithms;
     }
     private static void stat_THREAD_boot1_DEFINE_EventListener_XBoxController() {
         _stat_THREAD_EventListener_XBoxController = null;

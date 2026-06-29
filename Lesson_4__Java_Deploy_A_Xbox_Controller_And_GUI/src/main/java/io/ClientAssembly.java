@@ -12,63 +12,107 @@ public class ClientAssembly
         stat_CLASS_boot1_DEFINE_framework();
         stat_CLASS_boot3_INITIALISE_framework();
         System.out.printf("done architectured classes - DECLAIRE.%n");
+            System.out.printf("started class Global generate.%n");
+            stat_CLASS_get_Framework().dyn_CLASS_create_Global_and_Settings();
+            stat_CLASS_get_Framework().dyn_CLASS_get_Global().dyn_REG_boot1_DEFINE_Global();
+            stat_CLASS_get_Framework().dyn_CLASS_get_Global().dyn_REG_boot2_SUBSTANTIATE_Global();
+            stat_CLASS_get_Framework().dyn_CLASS_get_Global().dyn_REG_boot3_INITIALISE_Global();
+            System.out.printf("done class Global generate.%n");
 
-        System.out.printf("started class Global generate.%n");
-        stat_CLASS_get_Framework().dyn_CLASS_create_Global_and_Settings();
-        stat_CLASS_get_Framework().dyn_CLASS_get_Global().dyn_REG_boot1_DEFINE_Global();
-        stat_CLASS_get_Framework().dyn_CLASS_get_Global().dyn_REG_boot2_SUBSTANTIATE_Global();
-        stat_CLASS_get_Framework().dyn_CLASS_get_Global().dyn_REG_boot3_INITIALISE_Global();
-        System.out.printf("done class Global generate.%n");
-
-        System.out.printf("started architecture Class top level Framework() - DECLAIRE, DEFINE INITIALISE, Registers - DEFINE, SUBSTANTIATE, INITIALISE.%n");
         System.out.printf("started STRUCTS generate.%n");
-        stat_CLASS_get_Framework().dyn_CLASS_establish_Framework();
-        stat_CLASS_get_Framework().dyn_CLASS_complete_Framework(stat_CLASS_get_Framework());
+        stat_CLASS_get_Framework().dyn_boot_create_Architecture_Of_Framework();
+            System.out.printf("started independent STRUCT User_Input() - DECLAIRE, DEFINE INITIALISE, Registers - DEFINE, SUBSTANTIATE, INITIALISE.%n");
+            stat_CLASS_get_Framework().dyn_STRUCT_boot1_DEFINE_User_Input();
+            stat_CLASS_get_Framework().dyn_STRUCT_boot3_INITIALISE_User_Input();
+            stat_CLASS_get_Framework().dyn_STRUCT_get_User_Input().dyn_REG_boot1_DEFINE_User_Input();
+            stat_CLASS_get_Framework().dyn_STRUCT_get_User_Input().dyn_REG_boot2_SUBSTANTIATE_User_Input();
+            stat_CLASS_get_Framework().dyn_STRUCT_get_User_Input().dyn_REG_boot3_INITIALISE_User_Input();
+            System.out.printf("done independent STRUCT User_Input() - DECLAIRE, DEFINE INITIALISE, Registers - DEFINE, SUBSTANTIATE, INITIALISE.%n");
+        System.out.printf("started independent STRUCT Input() - DECLAIRE, DEFINE INITIALISE, Registers - DEFINE, SUBSTANTIATE, INITIALISE.%n");
+        stat_CLASS_get_Framework().dyn_STRUCT_boot1_DEFINE_Input();
+        stat_CLASS_get_Framework().dyn_STRUCT_boot3_INITIALISE_Input();
+        stat_CLASS_get_Framework().dyn_STRUCT_get_Input().dyn_REG_boot1_DEFINE_Input();
+        stat_CLASS_get_Framework().dyn_STRUCT_get_Input().dyn_REG_boot2_SUBSTANTIATE_Input();
+        stat_CLASS_get_Framework().dyn_STRUCT_get_Input().dyn_REG_boot3_INITIALISE_Input(stat_CLASS_get_Framework().dyn_STRUCT_get_User_Input());
+        System.out.printf("done independent STRUCT Input() - DECLAIRE, DEFINE INITIALISE, Registers - DEFINE, SUBSTANTIATE, INITIALISE.%n");
+            System.out.printf("started independent STRUCT User_Algorithm() - DECLAIRE, DEFINE INITIALISE, Registers - DEFINE, SUBSTANTIATE, INITIALISE.%n");
+            stat_CLASS_get_Framework().dyn_STRUCT_boot1_DEFINE_User_Algorithm();
+            stat_CLASS_get_Framework().dyn_STRUCT_boot3_INITIALISE_User_Algorithm();
+            stat_CLASS_get_Framework().dyn_STRUCT_get_User_Algorithm().dyn_REG_boot1_DEFINE_User_Algorithm();
+            stat_CLASS_get_Framework().dyn_STRUCT_get_User_Algorithm().dyn_REG_boot2_SUBSTANTIATE_User_Algorithm();
+            stat_CLASS_get_Framework().dyn_STRUCT_get_User_Algorithm().dyn_REG_boot3_INITIALISE_User_Algorithm();
+            System.out.printf("done independent STRUCT User_Algorithm() - DECLAIRE, DEFINE INITIALISE, Registers - DEFINE, SUBSTANTIATE, INITIALISE.%n");
+        System.out.printf("started independent STRUCT Algorithm(() - DECLAIRE, DEFINE INITIALISE, Registers - DEFINE, SUBSTANTIATE, INITIALISE.%n");
+        stat_CLASS_get_Framework().dyn_STRUCT_boot1_DEFINE_Algorithm();
+        stat_CLASS_get_Framework().dyn_STRUCT_boot3_INITIALISE_Algorithm();
+        stat_CLASS_get_Framework().dyn_STRUCT_get_Algorithm().dyn_REG_boot1_DEFINE_Algorithm();
+        stat_CLASS_get_Framework().dyn_STRUCT_get_Algorithm().dyn_REG_boot2_SUBSTANTIATE_Algorithm();
+        stat_CLASS_get_Framework().dyn_STRUCT_get_Algorithm().dyn_REG_boot3_INITIALISE_Algorithm(stat_CLASS_get_Framework().dyn_STRUCT_get_User_Algorithm());
+        System.out.printf("done independent STRUCT Algorithm(() - DECLAIRE, DEFINE INITIALISE, Registers - DEFINE, SUBSTANTIATE, INITIALISE.%n");
+            System.out.printf("started independent STRUCT User_Output(() - DECLAIRE, DEFINE INITIALISE, Registers - DEFINE, SUBSTANTIATE, INITIALISE.%n");
+            stat_CLASS_get_Framework().dyn_STRUCT_boot1_DEFINE_User_Output();
+            stat_CLASS_get_Framework().dyn_STRUCT_boot3_INITIALISE_User_Output();
+            stat_CLASS_get_Framework().dyn_STRUCT_get_User_Output().dyn_REG_boot1_DEFINE_User_Output();
+            stat_CLASS_get_Framework().dyn_STRUCT_get_User_Output().dyn_REG_boot2_SUBSTANTIATE_User_Output();
+            stat_CLASS_get_Framework().dyn_STRUCT_get_User_Output().dyn_REG_boot3_INITIALISE_User_Output();
+            System.out.printf("done independent STRUCT User_Output(() - DECLAIRE, DEFINE INITIALISE, Registers - DEFINE, SUBSTANTIATE, INITIALISE.%n");
+        System.out.printf("started independent STRUCT Output() - DECLAIRE, DEFINE INITIALISE, Registers - DEFINE, SUBSTANTIATE, INITIALISE.%n");
+        stat_CLASS_get_Framework().dyn_STRUCT_boot1_DEFINE_Output();
+        stat_CLASS_get_Framework().dyn_STRUCT_boot3_INITIALISE_Output();
+        stat_CLASS_get_Framework().dyn_STRUCT_get_Output().dyn_REG_boot1_DEFINE_Output();
+        stat_CLASS_get_Framework().dyn_STRUCT_get_Output().dyn_REG_boot2_SUBSTANTIATE_Output();
+        stat_CLASS_get_Framework().dyn_STRUCT_get_Output().dyn_REG_boot3_INITIALISE_Output(stat_CLASS_get_Framework().dyn_STRUCT_get_User_Output());
+        System.out.printf("started independent STRUCT Output() - DECLAIRE, DEFINE INITIALISE, Registers - DEFINE, SUBSTANTIATE, INITIALISE.%n");
+            System.out.printf("started independent STRUCT XboxController() - DECLAIRE, DEFINE INITIALISE, Registers - DEFINE, SUBSTANTIATE, INITIALISE.%n");
+            stat_CLASS_get_Framework().dyn_STRUCT_get_XboxController().dyn_CLASS_boot1_DEFINE_XboxController();
+            stat_CLASS_get_Framework().dyn_STRUCT_get_XboxController().dyn_CLASS_boot3_INITIALISE_XboxController();
+            stat_CLASS_get_Framework().dyn_STRUCT_get_XboxController().dyn_REG_boot1_DEFINE_XboxController();
+            stat_CLASS_get_Framework().dyn_STRUCT_get_XboxController().dyn_REG_boot2_SUBSTANTIATE_XboxController();
+            stat_CLASS_get_Framework().dyn_STRUCT_get_XboxController().dyn_REG_boot3_INITIALISE_XboxController();
+            System.out.printf("done independent STRUCT XboxController() - DECLAIRE, DEFINE INITIALISE, Registers - DEFINE, SUBSTANTIATE, INITIALISE.%n");
+        System.out.printf("started independent STRUCT Game_Instance() - DECLAIRE, DEFINE INITIALISE, Registers - DEFINE, SUBSTANTIATE, INITIALISE.%n");
+        stat_CLASS_get_Framework().dyn_STRUCT_get_Game_Instance().dyn_CLASS_boot1_DEFINE_Game_Instance();
+        stat_CLASS_get_Framework().dyn_STRUCT_get_Game_Instance().dyn_CLASS_boot3_INITIALISE_Game_Instance();
+        stat_CLASS_get_Framework().dyn_STRUCT_get_Game_Instance().dyn_REG_boot1_DEFINE_Game_Instance(stat_CLASS_get_Framework());
+        stat_CLASS_get_Framework().dyn_STRUCT_get_Game_Instance().dyn_REG_boot2_SUBSTANTIATE_Game_Instance(stat_CLASS_get_Framework());
+        stat_CLASS_get_Framework().dyn_STRUCT_get_Game_Instance().dyn_REG_boot3_INITIALISE_Game_Instance(stat_CLASS_get_Framework(), );
+        System.out.printf("done independent STRUCT Game_Instance() - DECLAIRE, DEFINE INITIALISE, Registers - DEFINE, SUBSTANTIATE, INITIALISE.%n");
+//TODO THREADS
+        System.out.printf("started independent STRUCT IO_ListenRespond() - DECLAIRE, DEFINE INITIALISE, Registers - DEFINE, SUBSTANTIATE, INITIALISE.%n");
+        //stat_CLASS_get_Framework().dyn_STRUCT_get_PostProcess().dyn_REG_boot1_DEFINE_IO_Listen_Respond();//todo
+        //stat_CLASS_get_Framework().dyn_STRUCT_get_PostProcess().dyn_REG_boot2_SUBSTANTIATE_IO_Listen_Respond();//todo
+        //stat_CLASS_get_Framework().dyn_STRUCT_get_PostProcess().dyn_REG_boot3_INITIALISE_IO_Listen_Respond();//todo
+        System.out.printf("done independent STRUCT IO_ListenRespond() - DECLAIRE, DEFINE INITIALISE, Registers - DEFINE, SUBSTANTIATE, INITIALISE.%n");
         System.out.printf("done STRUCTS generate.%n");
-        System.out.printf("done architecture Class top level Framework() - DECLAIRE, DEFINE INITIALISE, Registers - DEFINE, SUBSTANTIATE, INITIALISE.%n");
-    
+
         System.out.printf("started ARCHITECTURE generate. - Registers - DEFINE, SUBSTANTIATE, INITIALISE.%n");
         System.out.printf("started architectured classes - Registers - DEFINE.%n");
         stat_CLASS_get_Framework().dyn_REG_boot1_DEFINE_Framework_App(stat_CLASS_get_Framework());
         stat_CLASS_get_Framework().dyn_CLASS_get_Framework_App().dyn_REG_boot1_DEFINE_App(stat_CLASS_get_Framework());
-        stat_CLASS_get_Framework().dyn_CLASS_get_Framework_App().dyn_CLASS_get_Algorithims().dyn_REG_boot1_DEFINE_Algorithims(stat_CLASS_get_Framework());
+        stat_CLASS_get_Framework().dyn_CLASS_get_Framework_App().dyn_CLASS_get_Algorithms().dyn_REG_boot1_DEFINE_Algorithms(stat_CLASS_get_Framework());
         stat_CLASS_get_Framework().dyn_CLASS_get_Framework_App().dyn_CLASS_get_Data().dyn_REG_boot1_DEFINE_Data();
-        stat_CLASS_get_Framework().dyn_CLASS_get_Framework_App().dyn_CLASS_get_Data().dyn_CLASS_get_INSTANCE_Game().dyn_REG_boot1_DEFINE_Game_Instance(stat_CLASS_get_Framework());
-        //stat_CLASS_get_Framework().dyn_CLASS_get_Framework_App().dyn_CLASS_get_Data().dyn_CLASS_get_INSTANCE_Game().dyn_REG_get_Item_On_Array_Of_xboxController(0)
         stat_CLASS_get_Framework().dyn_CLASS_get_Framework_App().dyn_CLASS_get_Execute().dyn_REG_boot1_DEFINE_Execute(stat_CLASS_get_Framework());
         System.out.printf("done architectured classes - Registers - DEFINE.%n");
-
         System.out.printf("started architectured classes - Registers - SUBSTANTIATE.%n");
         stat_CLASS_get_Framework().dyn_REG_boot2_SUBSTANTIATE_Framework_App(stat_CLASS_get_Framework());
         stat_CLASS_get_Framework().dyn_CLASS_get_Framework_App().dyn_REG_boot2_SUBSTANTIATE_App(stat_CLASS_get_Framework());
-        stat_CLASS_get_Framework().dyn_CLASS_get_Framework_App().dyn_CLASS_get_Algorithims().dyn_REG_boot2_SUBSTANTIATE_Algorithims(stat_CLASS_get_Framework());
+        stat_CLASS_get_Framework().dyn_CLASS_get_Framework_App().dyn_CLASS_get_Algorithms().dyn_REG_boot2_SUBSTANTIATE_Algorithms(stat_CLASS_get_Framework());
         stat_CLASS_get_Framework().dyn_CLASS_get_Framework_App().dyn_CLASS_get_Data().dyn_REG_boot2_SUBSTANTIATE_Data(stat_CLASS_get_Framework());
-        stat_CLASS_get_Framework().dyn_CLASS_get_Framework_App().dyn_CLASS_get_Data().dyn_CLASS_get_INSTANCE_Game().dyn_REG_boot2_SUBSTANTIATE_Game_Instance(stat_CLASS_get_Framework());
-
         stat_CLASS_get_Framework().dyn_CLASS_get_Framework_App().dyn_CLASS_get_Execute().dyn_REG_boot2_SUBSTANTIATE_Execute(stat_CLASS_get_Framework());
         System.out.printf("done architectured classes -Registers - SUBSTANTIATE.%n");
-
         System.out.printf("started architectured classes - Registers - INITIALISE.%n");
         stat_CLASS_get_Framework().dyn_REG_boot3_INITIALISE_Framework_App(stat_CLASS_get_Framework(), stat_CLASS_get_Framework().dyn_STRUCT_get_Input(), stat_CLASS_get_Framework().dyn_STRUCT_get_Output());
         stat_CLASS_get_Framework().dyn_CLASS_get_Framework_App().dyn_REG_boot3_INITIALISE_App(stat_CLASS_get_Framework());
-        stat_CLASS_get_Framework().dyn_CLASS_get_Framework_App().dyn_CLASS_get_Algorithims().dyn_REG_boot3_INITIALISE_Algorithims(stat_CLASS_get_Framework());
+        stat_CLASS_get_Framework().dyn_CLASS_get_Framework_App().dyn_CLASS_get_Algorithms().dyn_REG_boot3_INITIALISE_Algorithms(stat_CLASS_get_Framework());
         stat_CLASS_get_Framework().dyn_CLASS_get_Framework_App().dyn_CLASS_get_Data().dyn_REG_boot3_INITIALISE_Data(stat_CLASS_get_Framework());
-        stat_CLASS_get_Framework().dyn_CLASS_get_Framework_App().dyn_CLASS_get_Data().dyn_CLASS_get_INSTANCE_Game().dyn_REG_boot3_INITIALISE_Game_Instance(stat_CLASS_get_Framework(), stat_CLASS_get_Framework().dyn_STRUCT_get_INSTANCE_Game().dyn_REG_get_Item_On_Array_Of_xboxController((char)0));
-
         stat_CLASS_get_Framework().dyn_CLASS_get_Framework_App().dyn_CLASS_get_Execute().dyn_REG_boot3_INITIALISE_Execute(stat_CLASS_get_Framework());
         System.out.printf("done architectured classes - Registers - INITIALISE.%n");
         System.out.printf("done ARCHITECTURE generate - Registers - DEFINE, SUBSTANTIATE, INITIALISE.%n");
-
         System.out.printf("started PROGRAM - INSTANTIATE.%n");
         stat_CLASS_get_Framework().dyn_REG_boot4_INSTANTIATE_Framework_App(stat_CLASS_get_Framework());
         System.out.printf("done PROGRAM - INSTANTIATE.%n");
-
-        System.out.printf("started PRIME Assembly.%n");
-        stat_CLASS_get_Framework().dyn_CLASS_get_Framework_App().dyn_CLASS_get_Execute().dyn_APP_startThreads();
-        System.out.printf("done PRIME Assembly.%n");
+    //TODO CHECK FLAG SUMMATIONS AND WAIT WHILE NOT PASS.
         System.out.printf("exiting DESKTOP APPLICATION generate_Program().%n");
-
-        //todo system initialised flag check in while not wait loop
         return stat_CLASS_get_Framework();
     }
     public static Framework dyn_CLASS_get_Framework()

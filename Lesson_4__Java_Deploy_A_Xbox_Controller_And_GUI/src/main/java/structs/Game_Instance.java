@@ -1,17 +1,27 @@
 package structs;
 import engine.Framework;
-import structs.peripheralSamples.xboxController;
+import structs.peripheralSamples.XboxController;
 public class Game_Instance {
-    private static xboxController[] _stat_REG_Array_Of_xboxController;
+    private static XboxController[] _stat_REG_Array_Of_xboxController;
     public Game_Instance()
     {
         stat_CLASS_boot0_DECLAIRE_Game_Instance();
-        stat_CLASS_boot1_DEFINE_Game_Instance();
-        stat_CLASS_boot3_INITIALISE_Game_Instance();
         stat_REG_boot0_DECLAIRE_Game_Instance();
     }
-    public void dyn_APP_saveSampleOfController(char controllerId, xboxController sample) {
+    public void dyn_APP_saveSampleOfController(char controllerId, XboxController sample) {
         stat_REG_get_Array_Of_xboxController()[controllerId] = sample;
+    }
+    public void dyn_CLASS_boot1_DEFINE_Game_Instance()
+    {
+        System.out.printf("entered dyn_CLASS_boot1_DEFINE_Game_Instance().%n");
+        stat_CLASS_boot1_DEFINE_Game_Instance();
+        System.out.printf("exiting dyn_CLASS_boot1_DEFINE_Game_Instance().%n");
+    }
+    public void dyn_CLASS_boot3_INITIALISE_Game_Instance()
+    {
+        System.out.printf("entered dyn_CLASS_boot3_INITIALISE_Game_Instance().%n");
+        stat_CLASS_boot3_INITIALISE_Game_Instance();
+        System.out.printf("exiting dyn_CLASS_boot3_INITIALISE_Game_Instance().%n");
     }
     public void dyn_REG_boot1_DEFINE_Game_Instance(Framework obj) {
         System.out.printf("entered dyn_REG_boot1_DEFINE_Game_Instance().%n");
@@ -23,7 +33,7 @@ public class Game_Instance {
         stat_REG_boot2_SUBSTANTIATE_xboxController();
         System.out.printf("exiting dyn_REG_boot2_SUBSTANTIATE_Game_Instance().%n");
     }
-    public void dyn_REG_boot3_INITIALISE_Game_Instance(Framework obj, xboxController controller) {
+    public void dyn_REG_boot3_INITIALISE_Game_Instance(Framework obj, XboxController controller) {
         System.out.printf("entered dyn_REG_boot3_INITIALISE_Game_Instance().%n");
         stat_REG_boot3_INITIALISE_xboxController(controller);
         System.out.printf("exiting dyn_REG_boot3_INITIALISE_Game_Instance().%n");
@@ -33,7 +43,7 @@ public class Game_Instance {
 
         System.out.printf("exiting dyn_REG_boot4_INSTANTIATE_Game_Instance().%n");
     }
-    public xboxController dyn_REG_get_Item_On_Array_Of_xboxController(char controllerId) {
+    public XboxController dyn_REG_get_Item_On_Array_Of_xboxController(char controllerId) {
         return stat_REG_get_Item_On_Array_Of_xboxController(controllerId);
     }
 // private.
@@ -70,11 +80,11 @@ public class Game_Instance {
     private static void stat_REG_boot2_SUBSTANTIATE_xboxController()
     {
         System.out.printf("entered stat_REG_boot2_SUBSTANTIATE_xboxController().%n");
-        _stat_REG_Array_Of_xboxController = new xboxController[2];//todo make 4 detect and save
+        _stat_REG_Array_Of_xboxController = new XboxController[2];//todo make 4 detect and save
         while(stat_REG_get_Array_Of_xboxController() == null) { }
         System.out.printf("exiting stat_REG_boot2_SUBSTANTIATE_xboxController().%n");
     }
-    private static void stat_REG_boot3_INITIALISE_xboxController(xboxController controller)
+    private static void stat_REG_boot3_INITIALISE_xboxController(XboxController controller)
     {
         System.out.printf("entered stat_REG_boot3_INITIALISE_xboxController().%n");
         for(char controllerId = 0; controllerId < 1; controllerId++)//todo make 4 detect and save
@@ -83,11 +93,11 @@ public class Game_Instance {
         }
         System.out.printf("exiting stat_REG_boot3_INITIALISE_xboxController().%n");
     }
-    private static xboxController[] stat_REG_get_Array_Of_xboxController()
+    private static XboxController[] stat_REG_get_Array_Of_xboxController()
     {
         return _stat_REG_Array_Of_xboxController;
     }
-    public xboxController stat_REG_get_Item_On_Array_Of_xboxController(char controllerId) {
+    public XboxController stat_REG_get_Item_On_Array_Of_xboxController(char controllerId) {
         return _stat_REG_Array_Of_xboxController[controllerId];
     }
 }

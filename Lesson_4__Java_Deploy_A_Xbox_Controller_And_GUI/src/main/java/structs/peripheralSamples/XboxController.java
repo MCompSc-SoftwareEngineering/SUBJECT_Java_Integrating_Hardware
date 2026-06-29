@@ -1,5 +1,5 @@
 package structs.peripheralSamples;
-public class xboxController {
+public class XboxController {
     private static float KEY_RECORD;
     private static float BUTTON_0;
     private static float BUTTON_1;
@@ -30,7 +30,7 @@ public class xboxController {
     private static float DPAD_RIGHT;
     private static float NULL;
 // public.
-    public xboxController() {
+    public XboxController() {
         KEY_RECORD = Float.MAX_VALUE;
         BUTTON_0 = Float.MAX_VALUE;
         BUTTON_1 = Float.MAX_VALUE;

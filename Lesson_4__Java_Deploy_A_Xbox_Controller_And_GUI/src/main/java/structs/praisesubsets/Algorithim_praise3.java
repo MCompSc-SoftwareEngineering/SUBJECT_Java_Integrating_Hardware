@@ -1,8 +1,8 @@
 package structs.praisesubsets;
 
-public class Algorithim_praise3 
+public class Algorithm_praise3 
 {
-    public Algorithim_praise3()
+    public Algorithm_praise3()
     {
 
     }
